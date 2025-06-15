@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Video Feed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        video-container {
+            margin-top: 20px;
+        }
+        .video-frame {
+            border: 5px solid #333;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 720px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video Feed for Category: {{ category }}</h1>
+    <div class="video-container">
+        <img class="video-frame" src="/video_feed/{{ category }}" alt="Video Stream">
+    </div>
+</body>
+</html>
